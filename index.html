@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>weather_app</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;715;800&family=Fredoka+One&family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css"
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-position">
+        <form id="search-form">
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Enter the city"
+                autofocus="on"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-outline-secondary"
+              />
+            </div>
+          </div>
+        </form>
+        <button class="btn btn-outline-secondary">Current Location</button>
+      </div>
+
+      <h1>KYIV</h1>
+      <h4>Tuesday 22:22</h4>
+
+      <div class="row">
+        <div class="col">
+          <img
+            class="center-pic"
+            src="pics/cloudy_day_sun_icon.svg"
+            alt="sun icon"
+            width="300px"
+          />
+        </div>
+
+        <div class="col">
+          <h2>
+            <span id="current-degree">25</span>
+            <a href="#" id="celsius-degree">°C</a>
+          </h2>
+          <div class="weather-info">
+            <div class="col" id="feels-like">Feels like 33°C</div>
+            <div class="col" id="humidity">Humidity 23%</div>
+            <div class="col" id="wind">Wind 9km/h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="forecast">
+        <div class="row">
+          <div class="col">
+            <div class="day">
+              Tomorrow
+              <div class="col">
+                <img
+                  src="pics/sun_icon.svg"
+                  alt="cloudy_day_sun_icon"
+                  width="50px"
+                />
+              </div>
+              <div class="col">29°C</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="day">
+              Thursday
+              <div class="col">
+                <img
+                  src="pics/sun_icon.svg"
+                  alt="cloudy_day_sun_icon"
+                  width="50px"
+                />
+              </div>
+              <div class="col">29°C</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="day">
+              Friday
+              <div class="col">
+                <img
+                  src="pics/cloudy_day_sun_icon.svg"
+                  alt="cloudy_day_sun_icon"
+                  width="50px"
+                />
+              </div>
+              <div class="col">27°C</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="day">
+              Saturday
+              <div class="col">
+                <img
+                  src="pics/cloudy_day_sun_icon.svg"
+                  alt="cloudy_day_sun_icon"
+                  width="50px"
+                />
+              </div>
+              <div class="col">25°C</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="day">
+              Sunday
+              <div class="col">
+                <img
+                  src="pics/sun_icon.svg"
+                  alt="cloudy_day_sun_icon"
+                  width="50px"
+                />
+              </div>
+              <div class="col">30°C</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="day">
+              Monday
+              <div class="col">
+                <img
+                  src="pics/sun_icon.svg"
+                  alt="cloudy_day_sun_icon"
+                  width="50px"
+                />
+              </div>
+              <div class="col">30°C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
