@@ -86,3 +86,11 @@ a {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.coder {
+  font-size: 12px;
+  position: relative;
+  top: 36px;
+}
+a {
+  font-size: 12px;
+}

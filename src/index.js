@@ -28,7 +28,7 @@ function showData(event) {
   if (searchInput.value) {
     function showTemperature(response) {
       let degree = document.querySelector("#current-degree");
-      degree.innerHTML = Math.round(response.data.main.temp);
+      degree.innerHTML = `${Math.round(response.data.main.temp)}°C`;
       let city = document.querySelector("h1");
       city.innerHTML = response.data.name;
       let humidity = document.querySelector("#humidity");
@@ -63,7 +63,7 @@ function currentData() {
 
     function currentLocationAndTemp(response) {
       let degree = document.querySelector("#current-degree");
-      degree.innerHTML = Math.round(response.data.main.temp);
+      degree.innerHTML = `${Math.round(response.data.main.temp)}°C`;
       let city = document.querySelector("h1");
       city.innerHTML = response.data.name;
       let humidity = document.querySelector("#humidity");
